@@ -3,9 +3,15 @@
   margin: 0;
   &__video {
     width: 100%;
-    clip-path: url(#clip);
     aspect-ratio: 5/4;
     object-fit: cover;
+    border-radius: 2rem;
+    overflow: hidden;
+    @supports (clip-path: path('M0 0')) {
+      clip-path: url(#clip);
+      border-radius: 0;
+      overflow: visible;
+    }
   }
   &__description {
     transform: translateY(-4.5rem);
