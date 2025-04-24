@@ -1,0 +1,110 @@
+.popup {
+  margin: auto;
+  background-color: #F7624C;
+  max-width: 560px;
+  padding: 2rem;
+  color: #FEFEFE;
+  font-size: 1.5rem;
+}
+.popup__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.popup__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-wrap: balance;
+}
+.popup__description {
+  font-size: inherit;
+  margin-top: 1.5rem;
+  text-wrap: balance;
+}
+.popup__linksbox {
+  display: grid;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+.popup__linksbox a {
+  text-decoration: underline;
+  color: #FEFEFE;
+}
+.popup__networks-box {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.popup__networks-box a img {
+  cursor: pointer;
+  padding: 5px;
+}
+.popup__close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.popup__close::before, .popup__close::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: 2rem;
+  height: 4px;
+  background-color: #FEFEFE;
+}
+.popup__close::before {
+  transform: rotate(45deg);
+}
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+.popup__close:hover::before, .popup__close:hover::after {
+  background-color: #cfcfcf;
+}
+.popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.form__input {
+  font-size: inherit;
+  color: inherit;
+  padding: 1rem 2rem;
+  background-color: #F8715E;
+  border-radius: 2rem;
+}
+.form__input::placeholder {
+  color: rgba(254, 254, 254, 0.5);
+}
+.form__button {
+  padding: 1rem 0;
+  border-radius: 2rem;
+  color: black;
+  background-color: #FEFEFE;
+  transition-duration: 0.3s;
+}
+.form__button:hover {
+  background: none;
+  color: #FEFEFE;
+  outline: 1px solid #FEFEFE;
+}
+.form .form__privacy-policy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(254, 254, 254, 0.5);
+}
+.form .form__privacy-policy a {
+  text-decoration: underline;
+  color: #FEFEFE;
+}

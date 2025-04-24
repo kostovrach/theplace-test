@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Man</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/popup.css">
+  </head>
+  <body>
+    <main>
+      <section class="main">
+        <header class="main__header header _content">
+          <picture>
+            <source
+              srcset="media/icons/logo-xs.svg"
+              media="(max-width: 1100px)"
+            />
+            <img
+              class="header__logo"
+              src="media/icons/logo-xl.svg"
+              alt="Good Man"
+            />
+          </picture>
+          <nav class="header__nav">
+            <li class="header__nav-item _hover-underline"><a href="#">О нас</a></li>
+            <li class="header__nav-item _hover-underline"><a href="#">Новости</a></li>
+            <li class="header__nav-item _hover-underline"><a href="#">Документы</a></li>
+            <li class="header__nav-item _hover-underline"><a href="#">Вопросы</a></li>
+            <li class="header__nav-item _hover-underline"><a href="#">Контакты</a></li>
+          </nav>
+          <div class="header__connection">
+            <a href="tel:+78001014273" class="header__tel _hover-underline">8 (800) 101-42-73</a>
+            <button class="header__button button-popup-open" type="button">
+              Связаться с нами &rarr;
+            </button>
+          </div>
+          <div class="header__burger burger">
+            <div class="burger__icon-wrapper">
+                <span class="burger__icon"></span>
+            </div>
+            <div class="burger__wrapper">
+                <nav class="burger__nav">
+                    <li class="burger__nav-item"><a href="#">О нас</a></li>
+                    <li class="burger__nav-item"><a href="#">Новости</a></li>
+                    <li class="burger__nav-item"><a href="#">Документы</a></li>
+                    <li class="burger__nav-item"><a href="#">Вопросы</a></li>
+                    <li class="burger__nav-item"><a href="#">Контакты</a></li>
+                </nav>
+                <div class="burger__connection">
+                    <a href="tel:+78001014273" class="burger__tel">8 (800) 101-42-73</a>
+                    <button class="burger__button button-popup-open" type="button">
+                      Связаться с нами &rarr;
+                    </button>
+                  </div>
+            </div>
+          </div>
+        </header>
+        <article class="main__about about _content">
+          <div class="about__content">
+            <div class="about__textbox">
+              <h1 class="about__title">
+                Помогаем списывать долги. Законно и безопасно
+              </h1>
+              <p class="about__text">
+                7 лет успешной практики, реальные кейсы, и поддержка на каждом
+                этапе. Мы помогаем людям вернуть контроль над жизнью
+              </p>
+              <button class="about__button button-popup-open" type="button">
+                Получить бесплатную консультацию
+              </button>
+            </div>
+
+            <div class="about__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__video-wrapper">
+                    <svg width="0" height="0">
+                      <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                        <path
+                          d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z"
+                        />
+                      </clipPath>
+                    </svg>
+                    <video
+                      class="slider__video"
+                      src="media/ConfusedTravolta.mp4"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    ></video>
+                  </div>
+                  <div class="slider__description">
+                    <p class="slider__title">Антонина Петровна, 38 лет</p>
+                    <p class="slider__resume">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__video-wrapper">
+                    <svg width="0" height="0">
+                      <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                        <path
+                          d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z"
+                        />
+                      </clipPath>
+                    </svg>
+                    <video
+                      class="slider__video"
+                      src="media/ConfusedTravolta.mp4"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    ></video>
+                  </div>
+                  <div class="slider__description">
+                    <p class="slider__title">Антонина Петровна, 38 лет</p>
+                    <p class="slider__resume">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__video-wrapper">
+                    <svg width="0" height="0">
+                      <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                        <path
+                          d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z"
+                        />
+                      </clipPath>
+                    </svg>
+                    <video
+                      class="slider__video"
+                      src="media/ConfusedTravolta.mp4"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    ></video>
+                  </div>
+                  <div class="slider__description">
+                    <p class="slider__title">Антонина Петровна, 38 лет</p>
+                    <p class="slider__resume">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__video-wrapper">
+                    <svg width="0" height="0">
+                      <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                        <path
+                          d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z"
+                        />
+                      </clipPath>
+                    </svg>
+                    <video
+                      class="slider__video"
+                      src="media/ConfusedTravolta.mp4"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    ></video>
+                  </div>
+                  <div class="slider__description">
+                    <p class="slider__title">Антонина Петровна, 38 лет</p>
+                    <p class="slider__resume">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__footer">
+                <div class="slider__pagination swiper-pagination"></div>
+                <a href="#" class="slider__button">
+                  Все отзывы &darr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <img class="main__subtract" src="media/icons/subtract.svg" alt="" />
+      </section>
+      <section class="team">
+        <img
+          src="media/team.png"
+          alt="Ваш браузер не поддерживает подобные изображения :("
+          class="team__image"
+        />
+      </section>
+      <dialog class="popup">
+        <div class="popup__wrapper">
+          <div class="popup__titlebox">
+            <p class="popup__title">Нужна помощь или консультация?</p>
+            <p class="popup__description">
+              Отправьте заявку на обратный звонок, и мы перезвоним в течение 15
+              минут или ближайший рабочий день
+            </p>
+          </div>
+          <form id="requestForm" class="popup__form form">
+            <input type="text" name="name" placeholder="Имя" class="form__input form__input--name" />
+            <input type="tel" name="tel" placeholder="Телефон" required class="form__input form__input--tel" />
+            <button class="form__button" type="submit">Отправить заявку &rarr;</button>
+            <p class="form__privacy-policy">Отправляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          </form>
+          <div class="popup__linksbox">
+            <p>Вы также можете заполнить <a href="#">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+            <div class="popup__networks">
+                <p>Или свяжитесь с нами в соцсетях</p>
+                <div class="popup__networks-box">
+                    <a href="#"><img src="media/icons/telegram.svg" alt="Telegram"></a>
+                    <a href="#"><img src="media/icons/vk.svg" alt="ВКонтакте"></a>
+                    <a href="#"><img src="media/icons/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            <a href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+          </div>
+          <button class="popup__close button-popup-close" type="button"></button>
+        </div>
+      </dialog>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/burger.js"></script>
+  </body>
+</html>
