@@ -1,0 +1,41 @@
+.about {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  &__content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2rem;
+  }
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2rem;
+  }
+  &__title {
+    font-size: 0;
+  }
+  &__text {
+    text-wrap: balance;
+  }
+  &__button {
+    width: fit-content;
+    color: #f7624c;
+    font-weight: 700;
+    background-color: #fefefe;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition-duration: 0.3s;
+    &:hover {
+      background: none;
+      color: #fefefe;
+      outline: 1px solid #fefefe;
+    }
+    &:active {
+      background-color: #f7624c;
+      color: #fefefe;
+      outline: none;
+    }
+  }
+}

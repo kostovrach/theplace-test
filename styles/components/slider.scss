@@ -1,0 +1,60 @@
+.slider {
+  position: relative;
+  margin: 0;
+  &__video {
+    width: 100%;
+    clip-path: url(#clip);
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
+  &__description {
+    transform: translateY(-4.5rem);
+  }
+  &__title {
+    margin: 0 0 1rem 0;
+  }
+  &__resume {
+    font-size: 14px;
+    color: rgba(254, 254, 254, 0.5);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(1.6em * 2);
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    height: 15px;
+  }
+  &__button {
+    position: absolute;
+    z-index: 100;
+    bottom: 8px;
+    right: 0;
+    transition-duration: 0.3s;
+    &:hover {
+      color: #cfcfcf;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 0;
+  background-color: #fefefe;
+  opacity: 1;
+  transition: 0.3s height;
+}
+
+.swiper-pagination-bullet-active {
+  height: 15px;
+}

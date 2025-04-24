@@ -1,0 +1,96 @@
+.burger {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  background: none;
+  &__icon-wrapper {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fefefe;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #fefefe;
+      transition-duration: 0.3s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &._active {
+      width: 0;
+      &::before {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+    }
+  }
+  &__wrapper {
+    background-color: rgba(247, 98, 76, 0.9);
+    padding: 2rem 2rem;
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    z-index: 9999;
+    &._active {
+      display: block;
+    }
+  }
+  &__wrapper * {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &__nav {
+    gap: 1.5rem;
+    font-weight: 600;
+    &-item {
+      text-decoration: underline;
+    }
+  }
+  &__connection {
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+  &__button {
+    color: #f7624c;
+    font-weight: 700;
+    text-wrap: nowrap;
+    background-color: #fefefe;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition-duration: 0.3s;
+    &:hover {
+      background: none;
+      color: #fefefe;
+      outline: 1px solid #fefefe;
+    }
+    &:active {
+      background-color: #f7624c;
+      color: #fefefe;
+      outline: none;
+    }
+  }
+}
